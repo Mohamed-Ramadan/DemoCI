@@ -4,4 +4,4 @@ language: swift
 script: xcodebuild
 xcode_project: DemoCI.xcodeproj # path to your xcodeproj folder
 xcode_scheme: DemoCITests
-xcode_destination: platform=iOS Simulator,OS=11.2,name=iPad Pro (9.7-inch)
+xcode_destination: platform=iOS Simulator,OS=11.2,name=iPhone 8
