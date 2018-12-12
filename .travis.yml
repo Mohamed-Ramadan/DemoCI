@@ -1,7 +1,7 @@
 os: osx
 osx_image: xcode9.2 
 language: swift
-script: xcodebuild
+script: xcodebuild clean build test -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.4,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
 xcode_project: DemoCI.xcodeproj # path to your xcodeproj folder
 xcode_scheme: DemoCITests
 xcode_destination: platform=iOS Simulator,OS=11.2,name=iPhone 8
