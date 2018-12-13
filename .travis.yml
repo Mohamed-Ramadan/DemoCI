@@ -12,7 +12,7 @@ script:
 
   #- xcodebuild clean build test -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.2,name=iPhone 8" ONLY_ACTIVE_ARCH=NO #DEVELOPMENT_TEAM=E46WB37LUW
   #- xcodebuild -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphoneos -configuration Release -allowProvisioningUpdates -derivedDataPath build/ -archivePath ArchiveFolder/DemoCI.xcarchive ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO archive
-  - xcodebuild -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphoneos -configuration Release -derivedDataPath build/ -archivePath ArchiveFolder/DemoCI.xcarchive PROVISIONING_PROFILE="dist.mobileprovision" ONLY_ACTIVE_ARCH=NO archive
+  - xcodebuild -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphoneos -configuration Release -derivedDataPath build/ -archivePath ArchiveFolder/DemoCI.xcarchive PROVISIONING_PROFILE="TravisDestProfile.mobileprovision" ONLY_ACTIVE_ARCH=NO archive
   - bash delete-keys.sh
   - bash generateIPA.sh
   - bash ipa-upload.sh
