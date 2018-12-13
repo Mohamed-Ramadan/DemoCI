@@ -10,8 +10,8 @@ script:
   #- bash add-keys.sh
   - bash update-bundle.sh
 
-  #- xcodebuild clean build test -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.2,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
-  - xcodebuild -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphoneos -configuration Release -allowProvisioningUpdates -derivedDataPath build/ -archivePath ArchiveFolder/DemoCI.xcarchive DEVELOPMENT_TEAM=E46WB37LUW ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO archive
+  #- xcodebuild clean build test -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.2,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO DEVELOPMENT_TEAM=E46WB37LUW
+  - xcodebuild -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphoneos -configuration Release -allowProvisioningUpdates -derivedDataPath build/ -archivePath ArchiveFolder/DemoCI.xcarchive ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO archive
 
   #- bash delete-keys.sh
   - bash generateIPA.sh
