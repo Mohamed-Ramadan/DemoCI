@@ -5,8 +5,17 @@ language: swift
 
 script:
   - pod install 
+
+  #- bash decryptCertificates.sh
+  #- bash add-keys.sh
+  - bash update-bundle.sh
+
   #- xcodebuild clean build test -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.2,name=iPhone 8" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
-  - xcodebuild -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphoneos -configuration Release -derivedDataPath build/ -archivePath ArchiveFolder/DemoCI.xcarchive PROVISIONING_PROFILE="dist.mobileprovision" ONLY_ACTIVE_ARCH=NO archive
+  - xcodebuild -workspace DemoCI.xcworkspace -scheme "DemoCI" -sdk iphoneos -configuration Release -derivedDataPath build/ -archivePath ArchiveFolder/DemoCI.xcarchive PROVISIONING_PROFILE="Automatic" ONLY_ACTIVE_ARCH=NO archive
+
+  #- bash delete-keys.sh
+  - bash generateIPA.sh
+  - bash ipa-upload.sh
  
 
 xcode_project: DemoCI.xcodeproj # path to your xcodeproj folder
