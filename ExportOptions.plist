@@ -8,8 +8,8 @@
 	<string>ad-hoc</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.test.travis-ci-ex</key>
-		<string>dist</string>
+		<key>com.kiwihat.DemoTravisCI</key>
+		<string>TravisDestProfile</string>
 	</dict>
 	<key>signingCertificate</key>
 	<string>iPhone Distribution</string>
