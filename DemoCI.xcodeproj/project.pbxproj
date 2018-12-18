@@ -540,7 +540,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiwihat.DemoTravisCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b24cb19c-52d9-475c-905f-8f648c18a191";
+				PROVISIONING_PROFILE = "5ccc935c-40e7-42f2-aced-acc79be6c822";
 				PROVISIONING_PROFILE_SPECIFIER = TravisDev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
