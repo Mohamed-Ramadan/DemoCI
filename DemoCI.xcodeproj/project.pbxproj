@@ -532,7 +532,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = E46WB37LUW;
 				INFOPLIST_FILE = DemoCI/Info.plist;
@@ -552,8 +551,7 @@
 			baseConfigurationReference = AB958D3E41B0F8945A12ADA1 /* Pods-DemoCI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Approcks (E46WB37LUW)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = E46WB37LUW;
 				INFOPLIST_FILE = DemoCI/Info.plist;
