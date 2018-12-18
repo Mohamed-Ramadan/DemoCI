@@ -6,7 +6,7 @@ HOCKEY_ID="3be1776054c64461ab0bac8a3eeda92e"
 HOCKEY_TOKEN="d0156df3efd0235d5860f63adc22cb99"
 
 if [ ! -z "$HOCKEY_ID" ] && [ ! -z "$HOCKEY_TOKEN" ]; then
-curl https://rink.hockeyapp.net/api/2/apps/$HOCKEY_ID \
+curl https://rink.hockeyapp.net/api/2/apps/upload \
 -F status="2" \
 -F notify="0" \
 -F notes="$RELEASE_NOTES" \
