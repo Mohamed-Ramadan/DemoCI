@@ -3,7 +3,7 @@ osx_image: xcode9.2
 language: swift
 
 before_install: 
-  - bash decryptCertificates.sh
+  #- bash decryptCertificates.sh
 
 before_script:
   - bash add-keys.sh
